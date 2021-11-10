@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+  <header>
+    <nav class="HolyGrail-nav">
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <li><a class="menu__item" href="index.html">Home</a></li>
+          <li><a class="menu__item" href="about.html">About</a></li>
+          <li><a class="menu__item" href="gallery.html">Gallery</a></li>
+          <li><a class="menu__item" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/cplogo.png" alt="logo" title="logo image" width="75" />
+      </a>
+    </div>
+  </header>
+
+  <main>
+   <div id="container" class="container"> </div>
+
+      <div id="mysidenav" class="sidenav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+
+      </div>
+      <section>
+        <div>
+          <h1>About Us</h1>
+        </div>
+        <article>
+          <div id="flip">About Us</div>
+          <div id="panel">Camp Pontiac is located in the foothills of the Berkshires just two hours from New York City.
+            Camp Pontiac is a 7 week sleep away camp that has been around since 1922. Camp Pontiac is a co-ed camp with
+            both a girls' side and boys' side located on the property.</div>
+          <figure>
+            <img src="images/entrance.jpg" alt="Camp Pontiac Entrance" title="Welcome to Camp Pontiac" width="300" />
+            <figcaption>Camp Pontiac Entrance</figcaption>
+          </figure>
+        </article>
+        <aside>
+          <div id="flip1">Activities</div>
+          <div id="panel1">We specialize in activities ranging from cooking, outdoor adventure, waterfront activities,
+            sports, arts and crafts, and so much more. At Camp Pontiac, there is an activity for everyone. Contact us to learn more about privates and specialized instruction! </div>
+            <figure>
+              <img src="images/sign.jpg" alt="Camp Pontiac Entrance Sign" title="Camp Pontiac Entrance Sign"
+                width="300" />
+              <figcaption>Camp Pontiac Directions</figcaption>
+            </figure>
+        </aside>
+      </section>
+
+
+
+
+      <div class="cp">
+        <img src="images/image1.png" alt="Camp Pontiac" title="Camp Pontiac" width="75" />
+      </div>
+
+  </main>
+
+  <footer>
+    <div class="footer">
+      <nav>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <p>Connect with us on social! <a class="social-media" href="https://www.facebook.com/camp.pontiac/"
+            target="_blank"><i class="fab fa-facebook-square"></i></a> <a class="social-media"
+            href="https://www.instagram.com/camppontiac_12516/?hl=en" target="_blank"><i
+              class="fab fa-instagram"></i></a></p>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    $(document).ready(function () {
+      $("#flip").click(function () {
+        $("#panel").slideUp("slow");
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $("#flip1").click(function () {
+        $("#panel1").slideUp("slow");
+      });
+    });
+  </script>
+
+</body>
+
+</html>
